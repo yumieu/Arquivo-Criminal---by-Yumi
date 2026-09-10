@@ -28,6 +28,9 @@
                 width: 80px;
                 height: 80px;
             }
+            .artigo-autor{
+                font-weight: bold;
+            }
         </style>
     </head>
     <body>
@@ -39,11 +42,22 @@
             <img src="pericia.png" alt="Mesa de perícia criminal com impressão digital, lupa, câmera fotográfica, luvas, marcador de evidência e materiais de investigação">
             <div>
                 <h2>A ciência por trás de um crime</h2>
-                <p>Por: Amanda Mayumi</p>
+                <p class="artigo-autor">Por: Amanda Mayumi</p>
                 <p>Uma investigação criminal é formada por diversas etapas e envolve profissionais de diferentes áreas. A perícia criminal tem um papel fundamental nesse processo, analisando vestígios encontrados e utilizando conhecimentos científicos para ajudar a esclarecer os fatos.</p>
+                <button>🔍 <span>0</span></button>
             </div>
             
 
         </main>
     </body>
+    <script>
+        const botao = document.querySelector("button");
+        botao.addEventListener("click", botaoClicado);
+
+        function botaoClicado(){
+            console.log("fui clicado");
+            
+        }
+
+    </script>
 </html>
